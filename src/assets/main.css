@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Github User Card Component Styles */
+.ui.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.ui.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ui.card .image {
+  text-align: center;
+}
+
+.ui.card .image img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.ui.card .content {
+  padding: 15px;
+}
+
+.ui.card .content a.header {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ui.card .content a.header:hover {
+  color: #2185d0;
+}
+
+.ui.card .content .meta {
+  color: #666;
+  margin-top: 5px;
+}
+
+.ui.card .content .description {
+  color: #444;
+  margin-top: 10px;
+}
+
+.ui.card .extra.content {
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.ui.card .extra.content a {
+  color: #2185d0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ui.card .extra.content a i.icon {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .ui.card {
+    width: 100%;
+  }
+}
